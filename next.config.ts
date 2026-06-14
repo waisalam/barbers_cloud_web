@@ -28,7 +28,7 @@ const adminHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-
+ 
   async headers() {
     return [
       { source: "/admin/(.*)", headers: adminHeaders     },
