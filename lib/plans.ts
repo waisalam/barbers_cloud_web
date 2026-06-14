@@ -1,0 +1,55 @@
+export const PLANS = [
+  {
+    name: "3 Months",
+    price: "₹350",
+    priceNum: 350,
+    perMonth: "₹116",
+    period: "per 3 months",
+    description: "Great for trying BarbersCloud risk-free.",
+    highlight: false,
+    badge: null,
+    savings: null,
+    cta: "Get started",
+  },
+  {
+    name: "6 Months",
+    price: "₹600",
+    priceNum: 600,
+    perMonth: "₹100",
+    period: "per 6 months",
+    description: "Most balanced option — save ₹100 vs monthly.",
+    highlight: false,
+    badge: "Save ₹100",
+    savings: "₹100",
+    cta: "Get started",
+  },
+  {
+    name: "1 Year",
+    price: "₹900",
+    priceNum: 900,
+    perMonth: "₹75",
+    period: "per year",
+    description: "Best value — save ₹530 compared to 3-month rate.",
+    highlight: true,
+    badge: "Best Value",
+    savings: "₹530",
+    cta: "Get started",
+  },
+] as const;
+
+export type Plan = (typeof PLANS)[number];
+
+export const ALL_FEATURES = [
+  "Unlimited bookings",
+  "Live map listing",
+  "Customer reviews",
+  "Automated reminders (24h & 1h)",
+  "No-show deposit protection",
+  "In-app customer messaging",
+  "Analytics dashboard",
+  "Priority map placement",
+  "Staff management",
+  "Custom availability hours",
+  "Cancellation management",
+  "Priority support",
+] as const;
